@@ -1,0 +1,1 @@
+As we see in python notebook, using merge, all values of fundmaster are in nav_history
