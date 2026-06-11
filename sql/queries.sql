@@ -28,3 +28,5 @@ select plan, avg(morningstar_rating) from fact_performance group by plan
 --sector market value
 select sector, sum(market_value_cr) as value from fact_portfolios group by sector;
 
+--latest benchmark
+select * from fact_benchmarks where date=(select date from fact_benchmarks order by date desc limit 1);
